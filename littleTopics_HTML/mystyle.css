@@ -1,0 +1,168 @@
+.pages {
+
+    width: 750px;
+    height: 1200px;
+    /*border: 1px solid black;*/
+    margin: 0px auto;
+    /*background: white;*/
+}
+
+.page_top {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    /*border: 1px solid black;*/
+    background: url("image/KAZTP1050224_TP_V.jpg");
+    /*background-repeat: repeat-x;*/
+    padding: auto;
+    margin: 0;
+
+}
+
+.page_back {
+    background: url("image/background_back.jpg");
+    background-repeat: repeat;
+
+}
+
+
+#printHidden {
+    visibility: hidden;
+}
+
+#allAdd {
+    /*position: absolute;*/
+    width: 174px;
+    height: 23px;
+    /*border-top: 1px solid black;*/
+    bottom: 2px;
+
+}
+
+#Balance {
+    /*position: absolute;*/
+    width: 174px;
+    height: 23px;
+    /*border-top: 1px solid black;*/
+    bottom: 1px;
+
+}
+
+
+
+#all {
+    position: absolute;
+    width: 134px;
+    height: 22px;
+    bottom: 1px;
+    right: 1px;
+    font-weight: bold;
+    border: 0px;
+}
+
+#balance {
+    position: absolute;
+    width: 134px;
+    height: 22px;
+    bottom: 2px;
+    right: 1px;
+    font-weight: bold;
+    border: 0px;
+}
+
+.dataKeyIn {
+    width: 175px;
+    height: 22px;
+}
+
+.table_title {
+    width: 710px;
+}
+
+.table2 {
+    width: 710px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.title_title {
+    width: 710px;
+    position: relative;
+    border: 1px solid black;
+}
+
+
+
+
+.title {
+    text-align: center;
+    height: 25px;
+    border-bottom: 2px solid black;
+}
+
+.top_title {
+    text-align: center;
+    height: 25px;
+    border: none;
+    font-size: 1.5em;
+}
+
+.formData {
+    position: relative;
+    height: 25px;
+    /*border: 1px solid black;*/
+    /*border-bottom: 2px solid black;*/
+    border: none;
+    vertical-align: top;
+    width: 25%;
+}
+
+
+.innerData {
+    height: 25px;
+    width: 25%;
+    border: none;
+
+}
+
+#dataArea {
+    position: relative;
+}
+
+.table3 {
+    width: 710px;
+    position: relative;
+    border: 1px solid black;
+
+}
+
+.table4 {
+
+    width: 710px;
+    position: relative;
+    border: 1px solid black;
+
+}
+
+
+.date {
+    height: 23px;
+
+}
+
+.td_budget {
+    border: none;
+}
+
+.income_keyin,
+.top_text {
+
+    width: 175px;
+    height: 22px;
+}
+
+#copyright {
+
+    text-align: center;
+}

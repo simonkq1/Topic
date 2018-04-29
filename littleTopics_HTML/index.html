@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <title>simpleAccount</title>
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="myscript.js"></script>
+
+
+
+    <style type="text/css" media="print">
+        /* 列印時隱藏 */
+
+        .print_hidden {
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="page_top"></div>
+    <div class="page_back">
+    <div class="pages">
+
+
+    <!--<div>-->
+    <!--    <input type="text" id="debug"/>-->
+    <!--    <input type="text" id="debug1"/>-->
+    <!--</div>-->
+
+        <table id="table1" name="table1">
+
+            <tr class="print_hidden">
+                <td>
+                    <input class="date" type="date" id="bookdate">
+                </td>
+                <td width>
+                    <button type="button" name="btn_date" id="btn_date" class="btn btn-outline-danger btn-sm">增加日期</button>
+                </td>
+                <td>
+                    <input class="top_text" type="text" id="top_text" placeholder="輸入標題">
+                </td>
+                <td width>
+                    <button type="button" name="btn_title" id="btn_title" class="btn btn-danger btn-sm">輸入標題</button>
+                </td>
+
+            </tr>
+            <tr class="print_hidden">
+                
+
+                <td class="income" height=23px><input type=text class="income_keyin" id="income_item" placeholder="品項"></td>
+                <td class="income" height=23px><input type=number class="income_keyin" id="income" value=0 placeholder="收入"></td>
+                <td class="income" height=23px><input type=text class="income_keyin" id="income_note" placeholder="備註"></td>
+
+                <td>
+                    <button type="button" name="btn_income" id="btn_income" class="btn btn-outline-danger btn-sm">增加收入</button>
+                    <!--<input type="button" name="btn_date" id="btn_date" value="增加日期" />-->
+                </td>
+            </tr>
+            <tr class="print_hidden">
+                <td><input type='text' class="dataKeyIn" id=a placeholder="品項"></td>
+                <td><input type='number' class="dataKeyIn" id=b value=0 placeholder="數量"></td>
+                <td><input type='number' class="dataKeyIn" id=c value=0 placeholder="單價"></td>
+
+                <td><input type='text' class="dataKeyIn" id=e placeholder="備註"></td>
+                <td><input type='number' class="dataKeyIn" id=d placeholder="總計" hidden></td>
+
+
+
+                <td><button type="button" name="add" id="add" class="btn btn-outline-danger btn-sm">增加支出</button></td>
+                <td><button type="button" name="clear" id="clear" class="btn btn-outline-primary btn-sm">清除資料</button></td>
+                <td><button type="button" name="clear_last" id="clear_last" class="btn btn-outline-dark btn-sm">清除最後一列</button></td>
+            </tr>
+
+            <button class="print_hidden btn btn-dark btn-sm" id="fnPrint">列印</button>
+
+            <tr hidden>
+
+                <td><input type='text' id=checkpoint_a placeholder="中站a"></td>
+                <td><input type='text' id=checkpoint_b placeholder="中站b"></td>
+                <td><input type='text' id=checkpoint_c placeholder="中站c"></td>
+                <td><input type='number' id=checkpoint_d value=0 placeholder="中站d"></td>
+                <td><input type='number' id=checkpoint_f value=0 placeholder="中站f"></td>
+                <td><input type='number' id=checkpoint_g value=0 placeholder="中站g"></td>
+                <td><input type='number' id=checkpoint_h value=0 placeholder="中站h"></td>
+                <td><input type='text' id=checkpoint_i value=0 placeholder="中站i"></td>
+                <td><input type='number' id=checkpoint_e placeholder="中站e"></td>
+                <td><input type='number' id=checkpoint_j value=0 placeholder="中站j"></td>
+
+            </tr>
+            <!--------------------小數點------------------------>
+            <select id="num" hidden>     
+                <!--<option value="0">0</option>     -->
+                <!--<option value="1">1</option>     -->
+                <option value="2">2</option>     
+                <!--<option value="3">3</option>     -->
+                <!--<option value="4">4</option>     -->
+                <!--<option value="5">5</option>     -->
+                </select>
+
+
+        </table>
+        <table class="table_title">
+            
+            <tr>
+                <th class="top_title"  colspan="4" height=23px id = "top_title">
+                    account-book
+                </th>
+                </tr>
+            
+        </table>
+        <table class="title_title  table-light table-striped table-hover " rules="all">
+            <tr>
+                <th class="title" width=25% height=23px>日期/品項</th>
+                <th class="title" width=25% height=23px>數量</th>
+                <th class="title" width=25% height=23px>單價</th>
+                <th class="title" width=25% height=23px>小計<small><small>:NT$</small></small>
+                </th>
+            </tr>
+            </table>
+
+        <table class="table2  table-light table-striped table-hover " rules="all">
+           
+        </table>
+
+        <table class="table3 table-light table-striped table-hover ">
+            <tr id=allAdd>
+                <td width="25%"></td>
+                <td width="25%"></td>
+                <td width="25%"></td>
+                <td width="25%">總計:<input type="text" id="all" name="all" readonly="readonly" placeholder="0"></td>
+            </tr>
+
+        </table>
+
+
+        <table class="table4 table-light table-striped table-hover ">
+            <tr id=Balance>
+                <td width="25%"></td>
+                <td width="25%"></td>
+                <td width="25%"></td>
+                <td width="25%">結餘:<input type="text" class="balance" id="balance" name="balance" readonly="readonly" placeholder="0"></td>
+            </tr>
+
+        </table>
+
+
+
+        </table>
+
+
+
+        </br>
+        </br>
+
+    </div>
+    
+			<div class="print_hidden" id="copyright">
+			    
+			</div>
+    </div>
+
+
+
+</body>
+
+</html>
