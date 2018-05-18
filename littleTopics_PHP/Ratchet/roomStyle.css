@@ -1,0 +1,124 @@
+
+.chatBox {
+    position: relative;
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    overflow-y: scroll;
+    vertical-align: bottom;
+    margin-top: 20px;
+
+}
+
+.chatArea {
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.list {
+    position: absolute;
+    border: 1px solid black;
+    width: 200px;
+    height: 530px;
+    margin-top: 20px;
+    margin-left: 100px;
+    /*align-content: left;*/
+    text-align: center;
+    align-content: center;
+
+}
+
+.mlist {
+    /*border:1px solid black;*/
+    width: 100px;
+
+}
+
+#chat {
+
+    width: 365px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+    text-indent: 0.7em;
+}
+
+#chatSpan {
+    /*width : 380px;*/
+    background-color: #acf298;
+    border-radius: 20px;
+
+}
+
+#myChat {
+    /*width : 380px;*/
+    background-color: #acf298;
+    border-radius: 20px;
+    /*border-right: 10px solid transparent;*/
+    /*transform: rotate(35deg);*/
+}
+
+#name_list, .myname{
+    border: none;
+    font-size: 1em;
+    width: 195px;
+    height: 30px;
+    transition: background-color 0.1s;
+    text-indent: 2em;
+    padding: 0 1px 0 4px;
+}
+
+#name_list:hover, .myname:hover {
+    background-color: lightgray;
+}
+
+#b {
+    /*width : 380px;*/
+    padding-right: 4px;
+    text-align: right;
+
+}
+
+#a {
+    padding-left: 4px;
+    /*width : 380px;*/
+    /*text-align: right;*/
+
+}
+.faceIcon{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    left :850px;
+    bottom: 450px;
+    border:none;
+    margin: 10px 10px 10px 10px;
+
+}
+.face{
+    /*width: auto;*/
+    align-items: left;
+    border:none;
+}
+#icon{
+    /*width: 30px;*/
+    /*height: 20px;*/
+    margin-bottom: 5px;
+    align-content: center;
+    transition-duration: 0.2s;
+}
+#icon:hover{
+    width: 40px;
+    height: 28px;
+    border-radius: 8px;
+   /*rgba:211,211,211,0.3;*/
+   background-color: lightgray;
+}
+.face:hover{
+    width:auto;
+}
